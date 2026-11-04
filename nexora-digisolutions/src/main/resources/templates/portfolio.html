@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Explore illustrative web design, marketing and branding concepts from Nexora DigiSolutions pvt ltd.">
+	<meta name="theme-color" content="#090d1b">
+	<title>Selected work | Nexora DigiSolutions pvt ltd</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments :: siteHeader}"></div>
+<main id="main-content">
+	<section class="page-hero">
+		<div class="container page-hero-content reveal"><p class="eyebrow">A few possibilities</p><h1>Work with a little <span class="text-gradient">more meaning.</span></h1><p>Every strong project starts with a good question. Here are a few sample concepts showing how we might answer.</p><div class="breadcrumb"><a th:href="@{/}">Home</a><span>/</span><span>Portfolio</span></div></div><div class="page-hero-glow"></div>
+	</section>
+	<section class="section portfolio-section">
+		<div class="container">
+			<div class="portfolio-toolbar reveal">
+				<div class="portfolio-filters" role="group" aria-label="Filter sample projects">
+					<button class="filter-button is-selected" type="button" data-filter="all" aria-pressed="true">All work</button>
+					<button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web design</button>
+					<button class="filter-button" type="button" data-filter="marketing" aria-pressed="false">Marketing</button>
+					<button class="filter-button" type="button" data-filter="branding" aria-pressed="false">Branding</button>
+				</div>
+			</div>
+			<div class="portfolio-grid">
+				<article class="portfolio-card portfolio-card-featured reveal" data-category="web"><a class="portfolio-image" href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Sample concept for a modern analytics dashboard" loading="lazy" decoding="async"><span class="image-open" aria-label="Open full image">↗</span></a><div class="portfolio-card-info"><p class="work-category">WEB DESIGN · SAMPLE CONCEPT</p><h2>Northstar — clarity in every click</h2><p>A clean, conversion-minded digital home for a fictional analytics company.</p><span class="portfolio-tag">Website design</span></div></article>
+				<article class="portfolio-card reveal" data-category="branding"><a class="portfolio-image" href="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Colorful sample brand identity and packaging concept" loading="lazy" decoding="async"><span class="image-open" aria-label="Open full image">↗</span></a><div class="portfolio-card-info"><p class="work-category">BRANDING · SAMPLE CONCEPT</p><h2>Goodkind — little moments, made lovely</h2><p>A warm, playful visual identity concept for a fictional home and lifestyle brand.</p><span class="portfolio-tag">Brand identity</span></div></article>
+				<article class="portfolio-card reveal" data-category="marketing"><a class="portfolio-image" href="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Marketing team discussing a campaign plan" loading="lazy" decoding="async"><span class="image-open" aria-label="Open full image">↗</span></a><div class="portfolio-card-info"><p class="work-category">MARKETING · SAMPLE CONCEPT</p><h2>Made for more — a launch story</h2><p>A multi-channel campaign direction for a fictional purpose-led apparel label.</p><span class="portfolio-tag">Digital campaign</span></div></article>
+				<article class="portfolio-card reveal" data-category="web"><a class="portfolio-image" href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Developer workspace showing a sample website project" loading="lazy" decoding="async"><span class="image-open" aria-label="Open full image">↗</span></a><div class="portfolio-card-info"><p class="work-category">WEB DESIGN · SAMPLE CONCEPT</p><h2>Groundwork — room to grow</h2><p>A thoughtful, mobile-first website concept for a fictional urban gardening studio.</p><span class="portfolio-tag">Website design</span></div></article>
+				<article class="portfolio-card reveal" data-category="marketing"><a class="portfolio-image" href="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Creative team collaborating on a content strategy" loading="lazy" decoding="async"><span class="image-open" aria-label="Open full image">↗</span></a><div class="portfolio-card-info"><p class="work-category">MARKETING · SAMPLE CONCEPT</p><h2>Open table — a community in motion</h2><p>A content and social concept to bring a fictional neighborhood food collective together.</p><span class="portfolio-tag">Content strategy</span></div></article>
+				<article class="portfolio-card reveal" data-category="branding"><a class="portfolio-image" href="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Graphic design workspace with creative brand materials" loading="lazy" decoding="async"><span class="image-open" aria-label="Open full image">↗</span></a><div class="portfolio-card-info"><p class="work-category">BRANDING · SAMPLE CONCEPT</p><h2>Brightside — a brand with good energy</h2><p>A bold graphic direction imagined for a fictional independent creative studio.</p><span class="portfolio-tag">Graphic design</span></div></article>
+			</div>
+			<p class="filter-empty" hidden>No sample projects in this category just yet.</p>
+		</div>
+	</section>
+	<section class="section mini-cta"><div class="container mini-cta-inner reveal"><div><p class="eyebrow">Your project could be next</p><h2>Have an idea? <span class="text-gradient">Let’s shape it.</span></h2></div><a class="button button-glow" th:href="@{/contact}">Start a conversation <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<div th:replace="~{fragments :: siteFooter}"></div>
+</body>
+</html>

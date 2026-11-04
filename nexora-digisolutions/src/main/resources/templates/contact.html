@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Talk to Nexora DigiSolutions pvt ltd about your website, marketing or brand. Get in touch from Hyderabad, India.">
+	<meta name="theme-color" content="#090d1b">
+	<title>Contact Nexora DigiSolutions pvt ltd | Let’s start a conversation</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments :: siteHeader}"></div>
+<main id="main-content">
+	<section class="page-hero page-hero-contact">
+		<div class="container page-hero-content reveal"><p class="eyebrow">We’re all ears</p><h1>Tell us what’s <span class="text-gradient">on your mind.</span></h1><p>A project, a question, a half-formed idea — we’d love to hear about it.</p><div class="breadcrumb"><a th:href="@{/}">Home</a><span>/</span><span>Contact</span></div></div><div class="page-hero-glow"></div>
+	</section>
+	<section class="section contact-section">
+		<div class="container contact-grid">
+			<div class="contact-details reveal">
+				<p class="eyebrow">Start a conversation</p><h2>Good things begin with <span class="text-gradient">hello.</span></h2>
+				<p>Share a little about what you’re looking for. We’ll be glad to point you in the right direction.</p>
+				<a class="contact-method" href="mailto:vijayanirmala.levanv@gmail.com"><span class="contact-method-icon">✉</span><span><small>Email us</small><strong>vijayanirmala.levanv@gmail.com</strong></span><span class="contact-method-arrow">↗</span></a>
+				<a class="contact-method" href="tel:+916303180265"><span class="contact-method-icon">⌕</span><span><small>Give us a call</small><strong>+91 63031 80265</strong></span><span class="contact-method-arrow">↗</span></a>
+				<div class="contact-method"><span class="contact-method-icon">⌖</span><span><small>Find us</small><strong>Ramanthapur, Hyderabad,<br>Telangana, India</strong></span></div>
+				<div class="contact-hours"><span class="status-dot"></span><span>Based in Hyderabad, India<br><small>We’ll get back to you as soon as we can.</small></span></div>
+			</div>
+			<div class="contact-form-card reveal">
+				<div class="form-heading"><p class="eyebrow">Your project starts here</p><h2>Tell us a little more.</h2><p>All fields except phone are required.</p></div>
+				<div class="notice notice-info" role="status" th:if="${deliveryNotice}" th:text="${deliveryNotice}"></div>
+				<form th:action="@{/contact}" th:object="${contactForm}" method="post">
+					<div class="form-row">
+						<div class="form-field"><label for="name">Your name <span>*</span></label><input id="name" type="text" th:field="*{name}" autocomplete="name" maxlength="100" required aria-describedby="name-error"><p class="field-error" id="name-error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p></div>
+						<div class="form-field"><label for="email">Email address <span>*</span></label><input id="email" type="email" th:field="*{email}" autocomplete="email" maxlength="254" required aria-describedby="email-error"><p class="field-error" id="email-error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p></div>
+					</div>
+					<div class="form-row">
+						<div class="form-field"><label for="phone">Phone number</label><input id="phone" type="tel" th:field="*{phone}" autocomplete="tel" maxlength="20" placeholder="+91 63031 80265" aria-describedby="phone-error"><p class="field-error" id="phone-error" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></p></div>
+						<div class="form-field"><label for="subject">What can we help with? <span>*</span></label><input id="subject" type="text" th:field="*{subject}" maxlength="120" required aria-describedby="subject-error"><p class="field-error" id="subject-error" th:if="${#fields.hasErrors('subject')}" th:errors="*{subject}"></p></div>
+					</div>
+					<div class="form-field"><label for="message">A little about your project <span>*</span></label><textarea id="message" th:field="*{message}" rows="5" maxlength="3000" required aria-describedby="message-error" placeholder="What are you working towards?"></textarea><p class="field-error" id="message-error" th:if="${#fields.hasErrors('message')}" th:errors="*{message}"></p></div>
+					<button class="button button-glow form-submit" type="submit">Send your enquiry <span aria-hidden="true">↗</span></button>
+					<p class="form-disclaimer">Your details are sent to this website for validation, but the enquiry is not emailed to us or stored. For a response, please email us directly.</p>
+				</form>
+			</div>
+		</div>
+	</section>
+</main>
+<div th:replace="~{fragments :: siteFooter}"></div>
+</body>
+</html>

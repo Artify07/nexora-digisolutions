@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Meet Nexora DigiSolutions pvt ltd: a thoughtful digital partner bringing creativity, innovation and clarity to growing businesses.">
+	<meta name="theme-color" content="#090d1b">
+	<title>About Nexora DigiSolutions pvt ltd | A partner for your next chapter</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments :: siteHeader}"></div>
+<main id="main-content">
+	<section class="page-hero">
+		<div class="container page-hero-content reveal"><p class="eyebrow">A little about us</p><h1>Digital can feel <span class="text-gradient">more human.</span></h1><p>We’re Nexora DigiSolutions pvt ltd — a creative digital partner helping businesses show up, stand out and move forward.</p><div class="breadcrumb"><a th:href="@{/}">Home</a><span>/</span><span>About us</span></div></div>
+		<div class="page-hero-glow"></div>
+	</section>
+	<section class="section about-story">
+		<div class="container story-grid">
+			<div class="story-copy reveal"><p class="eyebrow">Who we are</p><h2>One team for the <span class="text-gradient">whole picture.</span></h2>
+				<p>Nexora DigiSolutions pvt ltd brings digital strategy, creative thinking and practical technology together under one roof. We work with businesses that want more than a quick fix — they want a digital foundation that grows with them.</p>
+				<p>Our approach is collaborative by design: understand the people behind the brief, find the opportunity, then make the work clear, considered and useful.</p>
+				<a class="button button-outline" th:href="@{/contact}">Let’s get to know each other <span aria-hidden="true">→</span></a>
+			</div>
+			<div class="story-image walk-scene reveal" role="img" aria-label="Animated illustration of a person walking forward, surrounded by web development and digital marketing ideas">
+				<div class="walk-scene-glow"></div>
+				<div class="walk-grid" aria-hidden="true"></div>
+				<div class="walk-service walk-service-web"><span class="walk-service-icon" aria-hidden="true">&lt;/&gt;</span><span><strong>Web development</strong><small>Ideas built for the web</small></span></div>
+				<div class="walk-service walk-service-marketing"><span class="walk-service-icon" aria-hidden="true">↗</span><span><strong>Digital marketing</strong><small>Strategy that moves you forward</small></span></div>
+				<svg class="walking-person" viewBox="0 0 500 400" aria-hidden="true" focusable="false">
+					<defs>
+						<linearGradient id="walker-shirt" x1="210" y1="135" x2="290" y2="260" gradientUnits="userSpaceOnUse"><stop stop-color="#BBA5FF"/><stop offset="1" stop-color="#765DE2"/></linearGradient>
+						<linearGradient id="walker-pants" x1="220" y1="250" x2="285" y2="365" gradientUnits="userSpaceOnUse"><stop stop-color="#8DBBFF"/><stop offset="1" stop-color="#526CB8"/></linearGradient>
+						<linearGradient id="walker-skin" x1="215" y1="88" x2="280" y2="175" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD5B7"/><stop offset="1" stop-color="#D89983"/></linearGradient>
+					</defs>
+					<ellipse class="walker-shadow" cx="250" cy="369" rx="72" ry="13"/>
+					<g class="walker-leg walker-leg-back" transform="translate(250 248)">
+						<path d="M-10 0L-28 57L-19 111" fill="none" stroke="url(#walker-pants)" stroke-linecap="round" stroke-linejoin="round" stroke-width="25"/>
+						<path d="M-19 109L-43 119" fill="none" stroke="#D7D8EC" stroke-linecap="round" stroke-width="13"/>
+					</g>
+					<g class="walker-leg walker-leg-front" transform="translate(250 248)">
+						<path d="M11 0L28 60L45 108" fill="none" stroke="url(#walker-pants)" stroke-linecap="round" stroke-linejoin="round" stroke-width="25"/>
+						<path d="M44 107L66 116" fill="none" stroke="#F2F1FA" stroke-linecap="round" stroke-width="13"/>
+					</g>
+					<path d="M223 145Q250 130 277 145L289 230Q278 252 250 255Q222 252 211 230L223 145Z" fill="url(#walker-shirt)" stroke="#D8CBFF" stroke-opacity=".55" stroke-width="2"/>
+					<path d="M225 153L206 208" stroke="#D0BEFF" stroke-linecap="round" stroke-width="18"/>
+					<g class="walker-arm walker-arm-back" transform="translate(208 204)">
+						<path d="M0 0L-13 37L-2 62" fill="none" stroke="url(#walker-skin)" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+					</g>
+					<path d="M275 153L294 207" stroke="#B39BFF" stroke-linecap="round" stroke-width="18"/>
+					<g class="walker-arm walker-arm-front" transform="translate(294 204)">
+						<path d="M0 0L11 37L1 62" fill="none" stroke="url(#walker-skin)" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+					</g>
+					<path d="M233 134H267L272 151Q250 165 228 151L233 134Z" fill="#D99D85"/>
+					<ellipse cx="250" cy="108" rx="31" ry="35" fill="url(#walker-skin)"/>
+					<path d="M219 109Q216 72 249 71Q283 73 281 106L272 99Q263 94 259 83Q245 100 222 100L219 109Z" fill="#252541"/>
+					<path d="M232 113H234M266 113H268" stroke="#4F3E4F" stroke-linecap="round" stroke-width="3"/>
+					<path d="M243 128Q250 132 257 128" fill="none" stroke="#A65F69" stroke-linecap="round" stroke-width="2"/>
+					<path d="M232 141L250 151L269 141" fill="none" stroke="#E4D9FF" stroke-opacity=".6" stroke-width="2"/>
+				</svg>
+				<span class="walk-scene-caption">Creative thinking, always in motion</span>
+			</div>
+		</div>
+	</section>
+	<section class="section purpose-section">
+		<div class="container purpose-grid">
+			<article class="purpose-card reveal"><span class="purpose-symbol">↗</span><p class="eyebrow">Our mission</p><h2>Make meaningful digital growth <span class="text-gradient">more accessible.</span></h2><p>We create well-considered digital experiences that help our clients connect with people, build trust and take their next step.</p></article>
+			<article class="purpose-card purpose-card-alt reveal"><span class="purpose-symbol">✧</span><p class="eyebrow">Our vision</p><h2>A digital world that works <span class="text-gradient">better for everyone.</span></h2><p>We believe the best technology feels effortless, the strongest brands feel authentic, and good partnerships make ambitious things possible.</p></article>
+		</div>
+	</section>
+	<section class="section values-section">
+		<div class="container"><div class="section-heading reveal"><div><p class="eyebrow">What guides us</p><h2>Good values. <span class="text-gradient">Better work.</span></h2></div><p class="section-intro">The way we work matters just as much as what we make.</p></div>
+			<div class="values-grid">
+				<article class="value-card reveal"><span>01</span><h3>Creativity</h3><p>We look for the thoughtful, distinctive idea that makes your brand feel like you.</p></article>
+				<article class="value-card reveal"><span>02</span><h3>Innovation</h3><p>We stay curious about what’s next, and put new thinking to work where it truly helps.</p></article>
+				<article class="value-card reveal"><span>03</span><h3>Transparency</h3><p>Clear recommendations, honest conversations and no surprises along the way.</p></article>
+				<article class="value-card reveal"><span>04</span><h3>Customer-first</h3><p>Your goals guide every decision. We measure success by the difference it makes for you.</p></article>
+			</div>
+		</div>
+	</section>
+	<section class="section team-section">
+		<div class="container team-grid">
+			<div class="team-image reveal"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=1100&amp;q=82" alt="A team working together at a shared table" loading="lazy" decoding="async"></div>
+			<div class="team-copy reveal"><p class="eyebrow">People make the difference</p><h2>Good work is a <span class="text-gradient">team sport.</span></h2><p>We bring together complementary skills and perspectives to make your digital work more cohesive. Small enough to stay close, curious enough to see the bigger opportunity.</p><p class="sample-disclaimer">Photography is illustrative. Team portraits and biographies can be added as they become available.</p><a class="text-link" th:href="@{/contact}">Meet your digital partner <span>→</span></a></div>
+		</div>
+	</section>
+	<section class="section mini-cta"><div class="container mini-cta-inner reveal"><div><p class="eyebrow">Ready when you are</p><h2>Let’s build something <span class="text-gradient">worth remembering.</span></h2></div><a class="button button-glow" th:href="@{/contact}">Talk with our team <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<div th:replace="~{fragments :: siteFooter}"></div>
+</body>
+</html>

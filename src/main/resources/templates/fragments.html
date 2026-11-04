@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<header class="site-header" th:fragment="siteHeader">
+	<a class="skip-link" href="#main-content">Skip to content</a>
+	<div class="container header-inner">
+		<a class="brand" th:href="@{/}" aria-label="Nexora DigiSolutions pvt ltd home">
+			<img class="brand-icon" th:src="@{/images/nexora-mark.svg}" alt="">
+			<span class="brand-name"><span>Nexora</span><span>DigiSolutions</span></span>
+		</a>
+		<button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+			<span></span><span></span><span></span>
+		</button>
+		<nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+			<a th:href="@{/}" th:classappend="${activePage == 'home'} ? 'is-active' : ''">Home</a>
+			<a th:href="@{/about}" th:classappend="${activePage == 'about'} ? 'is-active' : ''">About Us</a>
+			<a th:href="@{/services}" th:classappend="${activePage == 'services'} ? 'is-active' : ''">Services</a>
+			<a th:href="@{/portfolio}" th:classappend="${activePage == 'portfolio'} ? 'is-active' : ''">Portfolio</a>
+			<a th:href="@{/contact}" th:classappend="${activePage == 'contact'} ? 'is-active' : ''">Contact</a>
+			<a class="button button-small button-glow nav-cta" th:href="@{/contact}">Get free consultation <span aria-hidden="true">↗</span></a>
+		</nav>
+	</div>
+</header>
+
+<footer class="site-footer" th:fragment="siteFooter">
+	<div class="container footer-main">
+		<div class="footer-brand">
+			<a class="brand" th:href="@{/}" aria-label="Nexora DigiSolutions pvt ltd home">
+				<img class="brand-icon" th:src="@{/images/nexora-mark.svg}" alt="">
+				<span class="brand-name"><span>Nexora</span><span>DigiSolutions</span></span>
+			</a>
+			<p>Thoughtful digital experiences that help ambitious businesses find their next level.</p>
+			<div class="social-links" aria-label="Share Nexora DigiSolutions">
+				<a href="https://www.linkedin.com/" data-share="linkedin" aria-label="Share on LinkedIn">in</a>
+				<a href="https://www.facebook.com/" data-share="facebook" aria-label="Share on Facebook">f</a>
+				<a href="https://wa.me/" data-share="whatsapp" aria-label="Share on WhatsApp">wa</a>
+			</div>
+		</div>
+		<div class="footer-column">
+			<h2>Explore</h2>
+			<a th:href="@{/}">Home</a>
+			<a th:href="@{/about}">About us</a>
+			<a th:href="@{/portfolio}">Portfolio</a>
+			<a th:href="@{/contact}">Contact</a>
+		</div>
+		<div class="footer-column">
+			<h2>What we do</h2>
+			<a th:href="@{/services}">Website development</a>
+			<a th:href="@{/services}">Search engine optimization</a>
+			<a th:href="@{/services}">Social media marketing</a>
+			<a th:href="@{/services}">Paid advertising</a>
+		</div>
+		<div class="footer-column footer-contact">
+			<h2>Say hello</h2>
+			<a href="mailto:vijayanirmala.levanv@gmail.com">vijayanirmala.levanv@gmail.com</a>
+			<a href="tel:+916303180265">+91 63031 80265</a>
+			<p>Ramanthapur, Hyderabad,<br>Telangana, India</p>
+		</div>
+	</div>
+	<div class="container footer-bottom">
+		<p>© 2026 Nexora DigiSolutions pvt ltd. All rights reserved.</p>
+		<div><a th:href="@{/privacy}">Privacy policy</a><a th:href="@{/terms}">Terms &amp; conditions</a></div>
+	</div>
+	<script th:src="@{/js/script.js}" defer></script>
+</footer>
+</body>
+</html>

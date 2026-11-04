@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Nexora DigiSolutions pvt ltd helps growing businesses build a stronger digital presence with web development, SEO, social media and performance marketing.">
+	<meta name="theme-color" content="#090d1b">
+	<title>Nexora DigiSolutions pvt ltd | Digital growth, thoughtfully built</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments :: siteHeader}"></div>
+<main id="main-content">
+	<section class="hero section-shell">
+		<div class="hero-orb hero-orb-one"></div><div class="hero-orb hero-orb-two"></div>
+		<div class="container hero-grid">
+			<div class="hero-copy reveal">
+				<p class="eyebrow"><span class="eyebrow-line"></span> Your next chapter starts here</p>
+				<h1>Make your digital presence <span class="text-gradient">impossible to ignore.</span></h1>
+				<p class="hero-lede">We bring strategy, design and technology together to help ambitious businesses grow with confidence.</p>
+				<div class="hero-actions">
+					<a class="button button-glow" th:href="@{/services}">Explore our services <span aria-hidden="true">↗</span></a>
+					<a class="button button-quiet" th:href="@{/contact}">Get free consultation <span aria-hidden="true">→</span></a>
+				</div>
+				<div class="hero-proof"><span class="proof-stars" aria-hidden="true">✦ ✦ ✦ ✦ ✦</span><span>Strategy-led. People-focused. Built to grow.</span></div>
+			</div>
+			<div class="hero-art reveal" role="img" aria-label="A rotating 3D cube highlighting web development, digital marketing, SEO, social media, content strategy, and digital advertising">
+				<div class="art-glow"></div>
+				<div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+				<div class="cube-scene">
+					<div class="digital-cube">
+						<div class="cube-face cube-front"><span class="cube-icon" aria-hidden="true">&lt;/&gt;</span><span class="cube-kicker">BUILD</span><strong>Web<br>development</strong><small>Digital experiences, built to perform.</small></div>
+						<div class="cube-face cube-right"><span class="cube-icon" aria-hidden="true">↗</span><span class="cube-kicker">GROW</span><strong>Digital<br>marketing</strong><small>Strategy that moves your brand forward.</small></div>
+						<div class="cube-face cube-back"><span class="cube-icon" aria-hidden="true">⌕</span><span class="cube-kicker">DISCOVER</span><strong>SEO &amp;<br>content</strong><small>Be found. Be remembered.</small></div>
+						<div class="cube-face cube-left"><span class="cube-icon" aria-hidden="true">◎</span><span class="cube-kicker">CONNECT</span><strong>Social<br>media</strong><small>Make every interaction count.</small></div>
+						<div class="cube-face cube-top"><span class="cube-icon" aria-hidden="true">✦</span><span class="cube-kicker">CREATE</span><strong>Brand<br>strategy</strong><small>Distinctive ideas with purpose.</small></div>
+						<div class="cube-face cube-bottom"><span class="cube-icon" aria-hidden="true">✉</span><span class="cube-kicker">ENGAGE</span><strong>Digital<br>campaigns</strong><small>Reach the people who matter.</small></div>
+					</div>
+				</div>
+				<div class="art-spark spark-one">✦</div><div class="art-spark spark-two">✧</div>
+			</div>
+		</div>
+		<div class="container hero-bottom"><span>DESIGN WITH PURPOSE</span><span>GROW WITH INTENTION</span><span>MAKE IT MATTER</span></div>
+	</section>
+
+	<section class="section section-services" id="services">
+		<div class="container">
+			<div class="section-heading reveal">
+				<div><p class="eyebrow">What we do</p><h2>Everything your brand needs<br><span class="text-gradient">to move forward.</span></h2></div>
+				<div class="heading-aside"><p>From the first click to lasting customer relationships, we build the digital foundations for meaningful growth.</p><a class="text-link" th:href="@{/services}">Explore all services <span>→</span></a></div>
+			</div>
+			<div class="service-grid">
+				<a class="service-card reveal" th:href="@{/services}">
+					<span class="service-icon icon-purple" aria-hidden="true">⌘</span><span class="card-index">01 / BUILD</span>
+					<h3>Website development</h3><p>Beautiful, fast websites designed to turn curious visitors into your next customers.</p><span class="card-arrow">↗</span>
+				</a>
+				<a class="service-card reveal" th:href="@{/services}">
+					<span class="service-icon icon-blue" aria-hidden="true">⌕</span><span class="card-index">02 / DISCOVER</span>
+					<h3>SEO &amp; content</h3><p>Get found by the right people with search strategy and useful, human-first content.</p><span class="card-arrow">↗</span>
+				</a>
+				<a class="service-card reveal" th:href="@{/services}">
+					<span class="service-icon icon-pink" aria-hidden="true">◎</span><span class="card-index">03 / CONNECT</span>
+					<h3>Social media</h3><p>Build a memorable community and make every conversation count.</p><span class="card-arrow">↗</span>
+				</a>
+				<a class="service-card reveal" th:href="@{/services}">
+					<span class="service-icon icon-orange" aria-hidden="true">↗</span><span class="card-index">04 / ACCELERATE</span>
+					<h3>Performance ads</h3><p>Reach the right audience with considered campaigns across Google and Meta.</p><span class="card-arrow">↗</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section why-section">
+		<div class="container why-grid">
+			<div class="why-visual reveal">
+				<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Creative team collaborating around a table" loading="lazy" decoding="async">
+				<div class="image-note"><span class="note-mark">N</span><span>Small team.<br><strong>Big-picture thinking.</strong></span></div>
+			</div>
+			<div class="why-copy reveal">
+				<p class="eyebrow">Why Nexora</p><h2>Good work starts with <span class="text-gradient">good partnership.</span></h2>
+				<p class="section-intro">No one-size-fits-all playbooks. Just thoughtful people who listen first, then make the right things happen.</p>
+				<div class="value-list">
+					<div><span class="value-number">01</span><div><h3>Curiosity over assumptions</h3><p>We get to know your goals, audience and challenges before we recommend a single thing.</p></div></div>
+					<div><span class="value-number">02</span><div><h3>Creative with a clear purpose</h3><p>Distinctive ideas, grounded in strategy and built to make a measurable difference.</p></div></div>
+					<div><span class="value-number">03</span><div><h3>Partnership you can count on</h3><p>Transparent communication, dependable delivery and a team that cares about your outcome.</p></div></div>
+				</div>
+				<a class="text-link" th:href="@{/about}">Meet Nexora <span>→</span></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section work-section">
+		<div class="container">
+			<div class="section-heading reveal"><div><p class="eyebrow">Selected work</p><h2>Small previews. <span class="text-gradient">Big possibilities.</span></h2></div><a class="text-link" th:href="@{/portfolio}">View all projects <span>→</span></a></div>
+			<div class="work-grid">
+				<a class="work-card work-card-large reveal" th:href="@{/portfolio}">
+					<div class="work-image work-image-one"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Analytics dashboard on a laptop screen" loading="lazy" decoding="async"><span class="work-overlay">↗</span></div>
+					<div class="work-caption"><div><span class="work-category">WEB DESIGN · SAMPLE PROJECT</span><h3>Northstar — a clearer path to growth</h3></div><span class="work-year">2026</span></div>
+				</a>
+				<a class="work-card reveal" th:href="@{/portfolio}">
+					<div class="work-image work-image-two"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Colorful creative branding and packaging" loading="lazy" decoding="async"><span class="work-overlay">↗</span></div>
+					<div class="work-caption"><div><span class="work-category">BRANDING · SAMPLE PROJECT</span><h3>Goodkind — made to feel like home</h3></div><span class="work-year">2026</span></div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section closing-section">
+		<div class="container closing-panel reveal">
+			<div class="closing-orb"></div>
+			<p class="eyebrow">Have a good one in mind?</p><h2>Let's make your next move <span class="text-gradient">your best one.</span></h2>
+			<p>Tell us what you're working towards. We'll bring the ideas, clarity and digital know-how to help you get there.</p>
+			<a class="button button-glow" th:href="@{/contact}">Start a conversation <span aria-hidden="true">↗</span></a>
+		</div>
+	</section>
+</main>
+<div th:replace="~{fragments :: siteFooter}"></div>
+</body>
+</html>
