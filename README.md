@@ -30,7 +30,7 @@ Nexora Digisolutions is a modern web application built to provide digital soluti
 
 After running the application, open your browser and visit:
 
-http://localhost:8081
+http://localhost:8081/
 
 ## Project Status
 
