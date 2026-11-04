@@ -1,26 +1,41 @@
-# Nexora DigiSolutions
+# Nexora Digisolutions
 
-Nexora DigiSolutions kosam chesina oka Java project. 
-Enquiries ni manage cheyadaniki use avutundi.
+Nexora Digisolutions is a modern web application built to provide digital solutions for businesses. It helps manage services, clients, and digital operations in a simple and organized way.
 
 ## Features
-- Enquiries ni save cheyadam
-- Enquiries data ni chudatam
-- Enquiries data `enquiries.csv` file lo store avutundi
 
-## Tech Stack
+- Modern and user-friendly interface
+- Service management
+- Client management
+- Fast and responsive design
+- Secure application
+
+## Technologies Used
+
 - Java
 - Spring Boot
+- HTML
+- CSS
+- JavaScript
 - Maven
 
-## Project Run Cheyadam Ela?
-1. Project ni open cheyi VS Code lo
-2. Terminal lo idi run cheyi:
-   ./mvnw spring-boot:run
-3. App run ayyaka browser lo open cheyi:
-   http://localhost:8080
+## How to Run the Project
 
-## Project Structure
-- src - Main code untundi
-- pom.xml - Maven dependencies untayi
-- enquiries.csv - Enquiries data untundi
+1. Clone the repository
+2. Open the project in your IDE
+3. Build the project using Maven
+4. Run the application
+
+## Access the Application
+
+After running the application, open your browser and visit:
+
+http://localhost:8081
+
+## Project Status
+
+This project is currently under development. New features will be added soon.
+
+## Author
+
+Nexora Digisolutions
